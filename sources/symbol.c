@@ -4,6 +4,17 @@
 #include <string.h>
 #include <math.h>
 
+int HashMod(int hash, int mod){
+  hash = hash % mod;
+  return hash
+}
+
+int Hashing(char *str, int mod){
+  int x;
+  x = Hash(str);
+  return(HashMod(x,mod));
+}
+
 int Hash(char *str){
   int sum = 0;
 
